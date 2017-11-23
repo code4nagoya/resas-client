@@ -62,7 +62,8 @@ public class ResasHttpAccess {
 	static final private String resasUrl = "https://opendata.resas-portal.go.jp/";
 
 	static final private String XAPIKEY = "X-API-KEY";
-	static final private String key = "";
+	static final private String key = (System.getProperty("XAPIKEY") != null) ? (System.getProperty("XAPIKEY")) : "";
+
 	/**
 	 * response
 	 */
