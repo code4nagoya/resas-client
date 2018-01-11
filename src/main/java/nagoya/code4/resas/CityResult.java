@@ -10,7 +10,6 @@ public class CityResult implements City {
 	/* (non-Javadoc)
 	 * @see nagoya.code4.resas.City#getPrefCode()
 	 */
-	@Override
 	public String getPrefCode() {
 		return prefCode;
 	}
@@ -20,7 +19,6 @@ public class CityResult implements City {
 	/* (non-Javadoc)
 	 * @see nagoya.code4.resas.City#getCityCode()
 	 */
-	@Override
 	public String getCityCode() {
 		return cityCode;
 	}
@@ -30,7 +28,6 @@ public class CityResult implements City {
 	/* (non-Javadoc)
 	 * @see nagoya.code4.resas.City#getCityName()
 	 */
-	@Override
 	public String getCityName() {
 		return cityName;
 	}
@@ -40,7 +37,6 @@ public class CityResult implements City {
 	/* (non-Javadoc)
 	 * @see nagoya.code4.resas.City#getBigCityFlag()
 	 */
-	@Override
 	public String getBigCityFlag() {
 		return bigCityFlag;
 	}
