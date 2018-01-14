@@ -244,8 +244,6 @@ public class ResasPrefectureHttpAccess {
 		// Contextual attributes set the local context level will take
 		// precedence over those set at the client level.
 
-		System.out.println("executing request " + httpget.getURI());
-		System.out.println("sentence " + sentence);
 		CloseableHttpResponse response = null;
 		try {
 			response = httpclient.execute(httpget, context);
@@ -257,11 +255,7 @@ public class ResasPrefectureHttpAccess {
 			e.printStackTrace();
 		}
 		try {
-			System.out.println("----------------------------------------");
-			System.out.println(response.getStatusLine());
 			String resultString = EntityUtils.toString(response.getEntity());
-			System.out.println(resultString);
-			System.out.println("----------------------------------------");
 
 			// Once the request has been executed the local context can
 			// be used to examine updated state and various objects affected
